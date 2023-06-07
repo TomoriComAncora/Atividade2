@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btIniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="252dp"
+        android:backgroundTint="#AA87EA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/bt1" />
+
+    <Button
+        android:id="@+id/btParar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#AA87EA"
+        android:text="@string/bt2"
+        app:layout_constraintStart_toStartOf="@+id/btIniciar"
+        app:layout_constraintTop_toBottomOf="@+id/btIniciar" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/resultadoX2"
+        app:layout_constraintStart_toStartOf="@+id/btParar"
+        app:layout_constraintTop_toBottomOf="@+id/btParar" />
+
+    <TextView
+        android:id="@+id/txtResultR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toEndOf="@+id/txtResult"
+        app:layout_constraintTop_toTopOf="@+id/txtResult" />
+
+    <TextView
+        android:id="@+id/txtResult2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="22dp"
+        android:text="@string/resultadoX3"
+        app:layout_constraintEnd_toStartOf="@+id/txtResultR2"
+        app:layout_constraintTop_toBottomOf="@+id/txtResult" />
+
+    <TextView
+        android:id="@+id/txtResultR2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtResult2"
+        app:layout_constraintStart_toStartOf="@+id/txtResultR" />
+
+    <EditText
+        android:id="@+id/eN1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="@string/edit1"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/eN2"
+        app:layout_constraintStart_toStartOf="@+id/eN2" />
+
+    <EditText
+        android:id="@+id/eN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="@string/edit2"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btIniciar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

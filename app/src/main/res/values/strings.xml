@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Thread</string>
+    <string name="bt1">Iniciar threads</string>
+    <string name="bt2">Parar threads</string>
+    <string name="resultadoX2">Resultado * 2:</string>
+    <string name="resultadoX3">Resultado * 3:</string>
+    <string name="edit1">Digite um número:</string>
+    <string name="edit2">Digite um número:</string>
+</resources>
